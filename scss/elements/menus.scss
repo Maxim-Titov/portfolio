@@ -1,0 +1,24 @@
+.header-menu {
+    width: 650px;
+
+    nav {
+        ul {
+            @include li-reset;
+
+            display: flex;
+            justify-content: space-evenly;
+
+            li {
+                a {
+                    color: $white;
+                    text-decoration: none;
+                    transition: color 0.3s;
+
+                    &:hover {
+                        color: $gray;
+                    }
+                }
+            }
+        }
+    }
+}

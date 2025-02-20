@@ -1,0 +1,18 @@
+@import '../global/variables';
+
+.main-wrapper {
+    main {
+        section {
+            border-bottom: 1px solid $gray-dark;
+
+            .container {
+                margin: 0 auto;
+                padding: 75px 0;
+            }
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}

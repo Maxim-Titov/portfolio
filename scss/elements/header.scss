@@ -1,0 +1,19 @@
+@import '../global/mixins';
+@import '../global/variables';
+
+header {
+    background-color: $theme-dark;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1000;
+
+    .container {
+        margin: 0 auto;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
+    }
+}
