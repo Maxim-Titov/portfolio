@@ -23,10 +23,10 @@
             <div class="header-menu">
                 <nav>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -51,7 +51,124 @@
 
             <section id="about">
                 <div class="container">
-                    <h2>About</h2>
+                    <h2>- About -</h2>
+
+                    <p>
+                        Hi! My name is Maxim Titov. I am a web developer with experience in HTML, CSS, JavaScript, and PHP. I also work with Drupal to build websites.
+
+                        I am passionate about new technologies, workflow optimization, and developing useful web applications. I constantly improve my skills and am open to new opportunities.
+                    </p>
+                </div>
+            </section>
+
+            <section id="projects">
+                <div class="container">
+                    <h2>- Projects -</h2>
+
+                    <div class="project">
+                        <div class="project-lucid">
+                            <img src="images/projects/lucid.png" alt="Lucid theme">
+
+                            <div class="project-content">
+                                <h3>Lucid</h3>
+
+                                <form action="#lucid">
+                                    <button>View more</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="project-personal">
+                            <img src="images/projects/personal.png" alt="Personal website">
+
+                            <div class="project-content">
+                                <h3>Personal</h3>
+
+                                <form action="#personal">
+                                    <button>View more</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills">
+                <div class="container">
+                    <h2>- Skills -</h2>
+
+                    <div class="skills">
+                        <div class="skill">
+                            <img src="images/skills/html.png" alt="HTML">
+                            <p>HTML</p>
+                        </div>
+
+                        <div class="skill">
+                            <img src="images/skills/css.png" alt="CSS">
+                            <p>CSS</p>
+                        </div>
+
+                        <div class="skill">
+                            <img src="images/skills/javascript.png" alt="JavaScript">
+                            <p>JavaScript</p>
+                        </div>
+
+                        <div class="skill">
+                            <img src="images/skills/php.png" alt="PHP">
+                            <p>PHP</p>
+                        </div>
+
+                        <div class="skill">
+                            <img src="images/skills/drupal.png" alt="Drupal">
+                            <p>Drupal</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="lucid">
+                <div class="container">
+                    <div class="content">
+                        <h2>- Lucid -</h2>
+
+                        <p>
+                            Lucid is a simple and clean theme for Drupal 8 and 9. It is based on the Bootstrap 4 framework and has a responsive design. The theme is easy to customize and has a lot of settings.
+                        </p>
+
+                        <form target="_blank" action="https://maxim-titov.github.io/lucid/">
+                            <button>View project</button>
+                        </form>
+                    </div>
+
+                    <div class="image">
+                        <img src="images/projects/lucid.png" alt="Lucid theme">
+                    </div>
+                </div>
+            </section>
+
+            <section id="personal">
+                <div class="container">
+                    <div class="content">
+                        <h2>- Personal -</h2>
+                        
+                        <p>
+                            This is portfolio theme. It is built with HTML, CSS, and JavaScript. The website is responsive and has a clean design. It is optimized for performance and SEO.
+                        </p>
+
+                        <form target="_blank" action="https://maxim-titov.github.io/titov-maxim-IPZ-32/">
+                            <button>View project</button>
+                        </form>
+                    </div>
+
+                    <div class="image">
+                        <img src="images/projects/personal.png" alt="Personal website">
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="container">
+                    <h2>- Contact -</h2>
 
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc
@@ -67,7 +184,11 @@
     </div>
 
     <footer>
-
+        <div class="container">
+            <p>&copy; 2025 Maxim Titov</p>
+        </div>
     </footer>
+    
+    <script type="text/javascript" src="js/fadeAnimations.js"></script>
 </body>
 </html>

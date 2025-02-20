@@ -1,0 +1,11 @@
+@import '../global/variables';
+
+footer {
+    background-color: $theme-dark;
+
+    .container {
+        margin: 0 auto;
+        text-align: center;
+        padding: 100px 0;
+    }
+}

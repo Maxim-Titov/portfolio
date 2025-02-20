@@ -1,0 +1,34 @@
+@import '../global/variables';
+
+#projects {
+    .container {
+        .project {
+            display: flex;
+
+            &-lucid,
+            &-personal {
+                padding: $gutterS;
+                border: 1px solid $gray-dark;
+                transition: background-color 0.3s;
+
+                img {
+                    width: 100%;
+                }
+
+                .project-content {
+                    padding: $gutterM 0;
+                    display: flex;
+                    justify-content: space-between;
+
+                    h3 {
+                        font-size: 45px;
+                    }
+                }
+
+                &:hover {
+                    background-color: rgba($gray-dark, 0.2);
+                }
+            }
+        }
+    }
+}

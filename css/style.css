@@ -16,8 +16,7 @@ html {
 }
 
 body {
-  background-color: #363744;
-  box-shadow: inset 0 0 180px 130px rgba(0, 0, 0, 0.5);
+  background-color: #1b1921;
 }
 
 * {
@@ -73,25 +72,32 @@ header .container {
   color: #b3b0ba;
 }
 
-.main-wrapper main section {
-  border-bottom: 1px solid #3d3556;
-}
 .main-wrapper main section .container {
   margin: 0 auto;
   padding: 75px 0;
 }
-.main-wrapper main section:last-child {
-  border-bottom: none;
+.main-wrapper main section .container h2 {
+  text-align: center;
+  margin-bottom: 75px;
 }
 
 #hero {
-  padding-top: 100px;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../images/hero-background.png);
+  background-size: 100%;
+  background-size: cover;
 }
-#hero .container .me {
+#hero .container {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+#hero .container .me {
   text-align: center;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeIn 1s ease-out forwards;
 }
 #hero .container .me img {
   width: 500px;
@@ -101,4 +107,105 @@ header .container {
 }
 #hero .container .me h1 {
   padding-top: 3rem;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#about {
+  background-color: #fff;
+  color: #363744;
+}
+
+#projects .container .project {
+  display: flex;
+}
+#projects .container .project-lucid, #projects .container .project-personal {
+  padding: 10px;
+  border: 1px solid #3d3556;
+  transition: background-color 0.3s;
+}
+#projects .container .project-lucid img, #projects .container .project-personal img {
+  width: 100%;
+}
+#projects .container .project-lucid .project-content, #projects .container .project-personal .project-content {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+#projects .container .project-lucid .project-content h3, #projects .container .project-personal .project-content h3 {
+  font-size: 45px;
+}
+#projects .container .project-lucid:hover, #projects .container .project-personal:hover {
+  background-color: rgba(61, 53, 86, 0.2);
+}
+
+#skills {
+  background-color: #fff;
+  color: #363744;
+}
+
+#lucid .container,
+#personal .container {
+  display: flex;
+}
+#lucid .container .content,
+#personal .container .content {
+  width: 60%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#lucid .container .image,
+#personal .container .image {
+  width: 40%;
+}
+#lucid .container .image img,
+#personal .container .image img {
+  width: 100%;
+}
+#lucid.visible .container,
+#personal.visible .container {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+#lucid .container {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+#lucid .container .content {
+  padding-right: 20px;
+}
+
+#personal .container {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+#personal .container .content {
+  padding-left: 20px;
+  order: 2;
+}
+#personal .container .image {
+  order: 1;
+}
+
+#contact {
+  background-color: #fff;
+  color: #363744;
+}
+
+footer {
+  background-color: #1b1921;
+}
+footer .container {
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px 0;
 }
