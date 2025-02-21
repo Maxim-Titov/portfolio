@@ -2,32 +2,58 @@
 
 #projects {
     .container {
-        .project {
-            display: flex;
+        .slider {
+            .slide {
+                margin-bottom: $gutter;
 
-            &-lucid,
-            &-personal {
-                padding: $gutterS;
-                border: 1px solid $gray-dark;
-                transition: background-color 0.3s;
-
-                img {
-                    width: 100%;
-                }
-
-                .project-content {
+                .slide-content {
+                    text-align: center;
+                    background-color: rgba($black, 0.3);
+                    border: 1px solid $gray;
+                    border-radius: 8px;
+                    width: 800px;
+                    margin: 0 auto;
                     padding: $gutterM 0;
-                    display: flex;
-                    justify-content: space-between;
-
-                    h3 {
-                        font-size: 45px;
+    
+                    img {
+                        width: 750px;
+                        margin: 0 auto $gutter auto;
+                    }
+    
+                    .content {
+                        padding: $gutterM 0;
+                        display: flex;
+                        justify-content: space-evenly;
+    
+                        h3 {
+                            font-size: 40px;
+                            margin-right: $gutter;
+                        }
                     }
                 }
+            }
 
-                &:hover {
-                    background-color: rgba($gray-dark, 0.2);
+            .slick-dots {
+                button {
+                    border: 1px solid $gray;
+                    height: 11px;
+                    width: 11px;
+                    background-color: $gray;
+                    font-weight: bold;
+                    display: block;
+                    padding: 0;
+                    text-indent: -9999px;
+                    border-radius: 100%;
                 }
+                
+                li.slick-active button {
+                    border: 1px solid $white;
+                    height: 11px;
+                    width: 11px;
+                    background-color: $white;
+                    outline: 1px solid $white;
+                    outline-offset: 4px;
+                }     
             }
         }
     }

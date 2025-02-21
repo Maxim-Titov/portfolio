@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+    <!-- Slider -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -64,29 +68,33 @@
             <section id="projects">
                 <div class="container">
                     <h2>- Projects -</h2>
+                    
+                    <div class="slider">
+                        <div class="slide">
+                            <div class="slide-content">
+                                <img src="images/projects/lucid.png" alt="Lucid theme">
 
-                    <div class="project">
-                        <div class="project-lucid">
-                            <img src="images/projects/lucid.png" alt="Lucid theme">
-
-                            <div class="project-content">
-                                <h3>Lucid</h3>
-
-                                <form action="#lucid">
-                                    <button>View more</button>
-                                </form>
+                                <div class="content">
+                                    <h3>Lucid</h3>
+    
+                                    <form action="#lucid">
+                                        <button>View more</button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="project-personal">
-                            <img src="images/projects/personal.png" alt="Personal website">
+                        <div class="slide">
+                            <div class="slide-content">
+                                <img src="images/projects/personal.png" alt="Personal website">
 
-                            <div class="project-content">
-                                <h3>Personal</h3>
-
-                                <form action="#personal">
-                                    <button>View more</button>
-                                </form>
+                                <div class="content">
+                                    <h3>Personal</h3>
+    
+                                    <form action="#personal">
+                                        <button>View more</button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -101,31 +109,31 @@
                         <div class="skill">
                             <img src="images/skills/html.png" alt="HTML">
                             <h3>HTML</h3>
-                            <p>Створення семантичної структури веб-сторінок.</p>
+                            <p>Creating semantic structure of web pages.</p>
                         </div>
             
                         <div class="skill">
                             <img src="images/skills/css.png" alt="CSS">
                             <h3>CSS</h3>
-                            <p>Стилізація веб-сторінок, включаючи адаптивний дизайн.</p>
+                            <p>Styling web pages, including responsive design.</p>
                         </div>
             
                         <div class="skill">
                             <img src="images/skills/js.png" alt="JavaScript">
                             <h3>JavaScript</h3>
-                            <p>Розробка інтерактивних елементів та функціоналу на веб-сторінках.</p>
+                            <p>Developing interactive elements and functionality on web pages.</p>
                         </div>
             
                         <div class="skill">
                             <img src="images/skills/php.png" alt="PHP">
                             <h3>PHP</h3>
-                            <p>Серверна розробка та інтеграція з базами даних.</p>
+                            <p>Server-side development and database integration.</p>
                         </div>
             
                         <div class="skill">
                             <img src="images/skills/drupal.png" alt="Drupal">
                             <h3>Drupal</h3>
-                            <p>Розробка та налаштування веб-сайтів на базі CMS Drupal.</p>
+                            <p>Developing and configuring websites based on the Drupal CMS.</p>
                         </div>
                     </div>
                 </div>
@@ -173,29 +181,25 @@
 
             <section id="contact">
                 <div class="container">
-                    <h2>- Contact -</h2>
+                    <a class="phone" href="tel:+380685981358">
+                        <img src="images/contact/phone.png" alt="phone">
+                        <p>0685981358</p>
+                    </a>
 
-                    <div class="contacts">
-                        <div class="phone">
-                            <img src="images/contact/phone.png" alt="phone">
-                            <a href="tel:+380685981358">0685981358</a>
-                        </div>
+                    <a class="email" href="mailto:tutovmaksum01@gmail.com">
+                        <img src="images/contact/email.png" alt="email">
+                        <p>tutovmaksum01@gmail.com</p>
+                    </a>
 
-                        <div class="email">
-                            <img src="images/contact/email.png" alt="email">
-                            <a href="mailto:tutovmaksum01@gmail.com">tutovmaksum01@gmail.com</a>
-                        </div>
+                    <a class="telegram" href="https://t.me/TitovMaxim" target="_blank">
+                        <img src="images/contact/telegram.png" alt="telegram">
+                        <p>@TitovMaxim</p>
+                    </a>
 
-                        <div class="telegram">
-                            <img src="images/contact/telegram.png" alt="telegram">
-                            <a href="https://t.me/TitovMaxim" target="_blank">@TitovMaxim</a>
-                        </div>
-
-                        <div class="github">
-                            <img src="images/contact/github.png" alt="github">
-                            <a href="https://github.com/Maxim-Titov" target="_blank">Maxim-Titov</a>
-                        </div>
-                    </div>
+                    <a class="github" href="https://github.com/Maxim-Titov" target="_blank">
+                        <img src="images/contact/github.png" alt="github">
+                        <p>Maxim-Titov</p>
+                    </a>
                 </div>
             </section>
         </main>
@@ -206,7 +210,11 @@
             <p>&copy; 2025 Maxim Titov</p>
         </div>
     </footer>
-    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+	<script type="text/javascript" src="js/slider.js"></script>
     <script type="text/javascript" src="js/fadeAnimations.js"></script>
 </body>
 </html>
