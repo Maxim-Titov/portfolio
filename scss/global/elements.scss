@@ -1,4 +1,5 @@
-@import 'variables.scss';
+@import 'variables';
+@import 'mixins';
 
 html, body {
     margin: 0;
@@ -25,6 +26,14 @@ body {
 
 p {
     margin: 0;
+}
+
+form {
+    button {
+        @include button-style($black, $white, 1px solid $white, rgba($gray-dark, 0.2));
+
+        border-radius: 5px;
+    }
 }
 
 h1, h2, h3, h4, h5 {

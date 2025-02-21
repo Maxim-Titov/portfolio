@@ -3,4 +3,31 @@
 #skills {
     background-color: $white;
     color: $black;
+    padding: 100px 0;
+
+    .container {
+        .skills {
+            display: flex;
+            justify-content: space-between;
+
+            .skill {
+                text-align: center;
+                width: 225px;
+
+                img {
+                    width: 150px;
+                    margin-bottom: $gutterM;
+                }
+
+                h3 {
+                    border-bottom: 3px solid $black;
+                    margin-bottom: $gutterS;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
 }

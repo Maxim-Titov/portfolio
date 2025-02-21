@@ -31,6 +31,24 @@ p {
   margin: 0;
 }
 
+form button {
+  background-color: #363744;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+form button:hover {
+  background-color: rgba(61, 53, 86, 0.2);
+}
+form button:active {
+  transform: scale(0.98);
+}
+
 h1, h2, h3, h4, h5 {
   margin: 0;
 }
@@ -146,6 +164,26 @@ header .container {
 #skills {
   background-color: #fff;
   color: #363744;
+  padding: 100px 0;
+}
+#skills .container .skills {
+  display: flex;
+  justify-content: space-between;
+}
+#skills .container .skills .skill {
+  text-align: center;
+  width: 225px;
+}
+#skills .container .skills .skill img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+#skills .container .skills .skill h3 {
+  border-bottom: 3px solid #363744;
+  margin-bottom: 10px;
+}
+#skills .container .skills .skill:last-child {
+  margin-right: 0;
 }
 
 #lucid .container,
@@ -159,6 +197,10 @@ header .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+#lucid .container .content form button,
+#personal .container .content form button {
+  margin-top: 20px;
 }
 #lucid .container .image,
 #personal .container .image {
@@ -199,6 +241,32 @@ header .container {
 #contact {
   background-color: #fff;
   color: #363744;
+}
+#contact .container .contacts {
+  display: flex;
+  justify-content: space-evenly;
+}
+#contact .container .contacts .phone,
+#contact .container .contacts .email,
+#contact .container .contacts .telegram,
+#contact .container .contacts .github {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#contact .container .contacts .phone img,
+#contact .container .contacts .email img,
+#contact .container .contacts .telegram img,
+#contact .container .contacts .github img {
+  margin: 0 auto;
+  width: 100px;
+  margin-bottom: 20px;
+}
+#contact .container .contacts .phone a,
+#contact .container .contacts .email a,
+#contact .container .contacts .telegram a,
+#contact .container .contacts .github a {
+  text-decoration: none;
 }
 
 footer {
