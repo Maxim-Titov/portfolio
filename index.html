@@ -21,7 +21,7 @@
     <header>
         <div class="container">
             <div class="logo">
-                <p>My portfolio</p>
+                <h1>My portfolio</h1>
             </div>
 
             <div class="header-menu">
@@ -29,14 +29,24 @@
                     <ul>
                         <li><a href="#hero">Home</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
+                        <li>
+                            <a href="#projects">Projects</a>
+
+                            <ul>
+                                <li><a href="#lucid">- Lucid</a></li>
+                                <li><a href="#personal">- Personal</a></li>
+                                <li><a href="#twitee">- Twitee</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
 
             <div class="contact">
-                contact
+                <form>
+                    <button>Contact</button>
+                </form>
             </div>
         </div>
     </header>
@@ -92,6 +102,20 @@
                                     <h3>Personal</h3>
     
                                     <form action="#personal">
+                                        <button>View more</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="slide">
+                            <div class="slide-content">
+                                <img src="images/projects/twitee.png" alt="Twitee">
+
+                                <div class="content">
+                                    <h3>Twitee</h3>
+    
+                                    <form action="#twitee">
                                         <button>View more</button>
                                     </form>
                                 </div>
@@ -175,6 +199,26 @@
 
                     <div class="image">
                         <img src="images/projects/personal.png" alt="Personal website">
+                    </div>
+                </div>
+            </section>
+
+            <section id="twitee">
+                <div class="container">
+                    <div class="content">
+                        <h2>- Twitee -</h2>
+                        
+                        <p>
+                            Twitee is a simple Twitter clone. It is built with HTML, CSS, and JavaScript. The website has a responsive design and is optimized for performance. It has a clean and user-friendly interface.
+                        </p>
+
+                        <form target="_blank" action="http://www.twitee.great-site.net/">
+                            <button>View project</button>
+                        </form>
+                    </div>
+
+                    <div class="image">
+                        <img src="images/projects/twitee.png" alt="Twitee">
                     </div>
                 </div>
             </section>

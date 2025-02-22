@@ -18,6 +18,33 @@
                         color: $gray;
                     }
                 }
+
+                &:nth-child(3) {
+                    ul {
+                        display: none;
+                        flex-direction: column;
+                        position: fixed;
+                        padding: 40px $gutterM $gutterM $gutterM;
+                        background-color: $theme-dark;
+                        transform: translateX(-25px);
+                        border-bottom-left-radius: 8px;
+                        border-bottom-right-radius: 8px;
+
+                        li {
+                            margin-bottom: $gutterS;
+
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        ul {
+                            display: block;
+                        }
+                    }
+                }
             }
         }
     }

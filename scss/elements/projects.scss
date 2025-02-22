@@ -12,8 +12,12 @@
                     border: 1px solid $gray;
                     border-radius: 8px;
                     width: 800px;
+                    height: 700px;
                     margin: 0 auto;
                     padding: $gutterM 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
     
                     img {
                         width: 750px;
@@ -23,11 +27,11 @@
                     .content {
                         padding: $gutterM 0;
                         display: flex;
-                        justify-content: space-evenly;
+                        justify-content: space-between;
+                        padding: 0 $gutter;
     
                         h3 {
                             font-size: 40px;
-                            margin-right: $gutter;
                         }
                     }
                 }

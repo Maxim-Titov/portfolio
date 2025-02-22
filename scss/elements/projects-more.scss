@@ -1,7 +1,8 @@
 @import '../global/variables';
 
 #lucid,
-#personal {
+#personal,
+#twitee {
     .container {
         display: flex;
 
@@ -36,7 +37,8 @@
     }
 }
 
-#lucid {
+#lucid,
+#twitee {
     .container {
         opacity: 0;
         transform: translateX(50px);

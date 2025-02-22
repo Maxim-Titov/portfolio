@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const lucidSection = document.querySelector('#lucid');
     const personalSection = document.querySelector('#personal');
+    const twiteeSection = document.querySelector('#twitee');
     const skillsSection = document.querySelector('#skills');
     const contactSection = document.querySelector('#contact');
     
@@ -21,6 +22,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (personalSection) {
         observer.observe(personalSection);
+    }
+
+    if (twiteeSection) {
+        observer.observe(twiteeSection);
     }
 
     if (skillsSection) {
