@@ -12,7 +12,10 @@ html {
 }
 
 body {
-    background-color: $theme-dark;
+    // background-color: $theme-dark;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../images/elements/background.png);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 * {

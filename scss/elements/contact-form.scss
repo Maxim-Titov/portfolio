@@ -1,0 +1,115 @@
+@import '../global/variables';
+
+.contact-btn {
+    .hidden-contact {
+        #click-check {
+            display: none;
+
+            &:checked ~ .contact {
+                visibility: visible;
+                opacity: 1;
+                overflow: visible;
+            }
+
+            &:checked ~ .back-black {
+                visibility: visible;
+                opacity: 0.65;
+            }
+        }
+
+        .clickable {
+            cursor: pointer;
+
+            p {
+                background-color: $black;
+                border: 1px solid $gray;
+                padding: 10px 20px 8px 20px;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: rgba($gray-dark, 0.2);
+                }
+            
+                &:active {
+                    transform: scale(0.98);
+                }
+            }
+
+            .close-btn {
+                position: absolute;
+                width: 25px;
+                top: 20px;
+                right: 25px;
+                z-index: 20;
+            }
+        }
+
+        .contact {
+            text-align: center;
+            position: fixed;
+            background-color: $black;
+            padding: 50px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+            width: 480px;
+            opacity: 0;
+            overflow: hidden;
+            visibility: hidden;
+            transition: opacity 0.5s ease;
+            z-index: 21;
+
+            #close-check {
+                display: none;
+            }
+        
+            h1 {
+                font-size: 35px;
+            }
+
+            &-content {
+                padding-top: 75px;
+
+                a {
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: $gutter;
+                    color: $white;
+                    text-decoration: none;
+                    transition: color 0.3s;
+
+                    img {
+                        width: 30px;
+                    }
+
+                    p {
+                        flex: 1;
+                    }
+
+                    &:hover {
+                        color: $gray;
+                    }
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        .back-black {
+            position: fixed;
+            z-index: 9;
+            background-color: $black;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            visibility: hidden;
+            transition: opacity 0.5s ease;
+            opacity: 0;
+        }
+    }
+}
