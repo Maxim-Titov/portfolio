@@ -10,12 +10,21 @@ document.addEventListener('DOMContentLoaded', function () {
         threshold: 0.1
     });
 
+    const skillsSection = document.querySelector('#skills');
+    const testimonialsSection = document.querySelector('#testimonials');
     const lucidSection = document.querySelector('#lucid');
     const personalSection = document.querySelector('#personal');
     const twiteeSection = document.querySelector('#twitee');
-    const skillsSection = document.querySelector('#skills');
     const contactSection = document.querySelector('#contact');
-    
+ 
+    if (skillsSection) {
+        observer.observe(skillsSection);
+    }
+
+    if (testimonialsSection) {
+        observer.observe(testimonialsSection);
+    }
+
     if (lucidSection) {
         observer.observe(lucidSection);
     }
@@ -26,10 +35,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (twiteeSection) {
         observer.observe(twiteeSection);
-    }
-
-    if (skillsSection) {
-        observer.observe(skillsSection);
     }
 
     if (contactSection) {

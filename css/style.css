@@ -246,9 +246,56 @@ header .container {
     transform: translateY(0);
   }
 }
-#about {
+#skills {
   background-color: #fff;
   color: #363744;
+  padding: 75px 0 100px 0;
+}
+#skills .container .skills {
+  display: flex;
+  justify-content: space-between;
+}
+#skills .container .skills .skill {
+  text-align: center;
+  width: 225px;
+}
+#skills .container .skills .skill img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+#skills .container .skills .skill h3 {
+  border-bottom: 3px solid #363744;
+  margin-bottom: 10px;
+}
+#skills .container .skills .skill:first-child {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+#skills .container .skills .skill:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-25px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+#skills .container .skills .skill:nth-child(3) {
+  opacity: 0;
+  transform: translateX(0);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+#skills .container .skills .skill:nth-child(4) {
+  opacity: 0;
+  transform: translateX(25px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+#skills .container .skills .skill:last-child {
+  margin-right: 0;
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+#skills.visible .container .skills .skill {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 #projects .container .slider .slide {
@@ -306,54 +353,81 @@ header .container {
   outline-offset: 4px;
 }
 
-#skills {
+#testimonials {
   background-color: #fff;
   color: #363744;
-  padding: 75px 0 100px 0;
 }
-#skills .container .skills {
+#testimonials .container .testimonials-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
-#skills .container .skills .skill {
-  text-align: center;
-  width: 225px;
-}
-#skills .container .skills .skill img {
-  width: 150px;
+#testimonials .container .testimonials-content .testimonial {
+  width: 33%;
+  background-color: #1b1921;
+  padding: 8px;
   margin-bottom: 20px;
-}
-#skills .container .skills .skill h3 {
-  border-bottom: 3px solid #363744;
-  margin-bottom: 10px;
-}
-#skills .container .skills .skill:first-child {
+  transition: margin 0.3s, border-radius 0.3s, opacity 1s ease-out, transform 1s ease-out;
   opacity: 0;
+}
+#testimonials .container .testimonials-content .testimonial .content {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  min-height: 180px;
+}
+#testimonials .container .testimonials-content .testimonial .user-name {
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+#testimonials .container .testimonials-content .testimonial:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
   transform: translateX(-50px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
 }
-#skills .container .skills .skill:nth-child(2) {
-  opacity: 0;
-  transform: translateX(-25px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
-}
-#skills .container .skills .skill:nth-child(3) {
-  opacity: 0;
-  transform: translateX(0);
-  transition: opacity 1s ease-out, transform 1s ease-out;
-}
-#skills .container .skills .skill:nth-child(4) {
-  opacity: 0;
-  transform: translateX(25px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
-}
-#skills .container .skills .skill:last-child {
-  margin-right: 0;
-  opacity: 0;
+#testimonials .container .testimonials-content .testimonial:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
   transform: translateX(50px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
 }
-#skills.visible .container .skills .skill {
+#testimonials .container .testimonials-content .testimonial:hover {
+  transform: scale(1.1) !important;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+#testimonials .container .testimonials-form {
+  display: flex;
+  justify-content: center;
+}
+#testimonials .container .testimonials-form form {
+  margin-right: 20px;
+}
+#testimonials .container .testimonials-form form:last-child {
+  margin-right: 0;
+}
+#testimonials .container .testimonials-form form button {
+  background-color: #b3b0ba;
+  color: black;
+  border: 1px solid black;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  width: 100px;
+  transition: color 0.3s;
+}
+#testimonials .container .testimonials-form form button:hover {
+  background-color: #363744;
+}
+#testimonials .container .testimonials-form form button:active {
+  transform: scale(0.98);
+}
+#testimonials .container .testimonials-form form button:hover {
+  color: #fff;
+}
+#testimonials.visible .container .testimonials-content .testimonial {
   opacity: 1;
   transform: translateX(0);
 }

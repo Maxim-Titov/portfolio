@@ -1,0 +1,94 @@
+@import '../global/variables';
+@import '../global/mixins';
+
+#testimonials {
+    background-color: $white;
+    color: $black;
+
+    .container {
+        .testimonials {
+            &-content {
+                display: flex;
+                justify-content: center;
+
+                .testimonial {
+                    width: 33%;
+                    background-color: $theme-dark;
+                    padding: 8px;
+                    margin-bottom: $gutterM;
+                    transition: margin 0.3s, border-radius 0.3s, opacity 1s ease-out, transform 1s ease-out;
+                    opacity: 0;
+
+                    .content {
+                        background-color: $white;
+                        border-radius: 8px;
+                        padding: $gutterS;
+                        min-height: 180px;
+                    }
+
+                    .user-name {
+                        color: $white;
+                        padding: $gutterS;
+                        text-align: center;
+                    }
+
+                    &:first-child {
+                        border-top-left-radius: 8px;
+                        border-bottom-left-radius: 8px;
+                        transform: translateX(-50px);
+                    }
+
+                    &:last-child {
+                        border-top-right-radius: 8px;
+                        border-bottom-right-radius: 8px;
+                        transform: translateX(50px);
+                    }
+
+                    &:hover {
+                        transform: scale(1.1) !important;
+                        margin-left: $gutterS;
+                        margin-right: $gutterS;
+                        border-radius: 8px;
+                    }
+                }
+            }
+
+            &-form {
+                display: flex;
+                justify-content: center;
+
+                form {
+                    margin-right: $gutterM;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    button {
+                        @include button-style($gray, black, 1px solid black, $black);
+
+                        width: 100px;
+                        transition: color 0.3s;
+
+                        &:hover {
+                            color: $white;
+                        }                        
+                    }
+                }
+            }
+        }
+    }
+
+    &.visible {
+        .container {
+            .testimonials {
+                &-content {
+                    .testimonial {
+                        opacity: 1;
+                        transform: translateX(0);
+                    }
+                }
+            }
+        }
+    }
+}
