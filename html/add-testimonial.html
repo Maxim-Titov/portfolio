@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <style>
+        main {
+            padding-top: 187px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <h1>My portfolio</h1>
+                </div>
+
+                <div class="contact-btn">
+                    <div class="hidden-contact">
+                        <input type="checkbox" id="click-check"/>
+                        <label for="click-check" class="clickable">
+                            <p>Contact</p>
+                        </label>
+                        
+                        <section class="contact">
+                            <input type="checkbox" id="close-check"/>
+                            <label for="click-check" class="clickable">
+                                <img src="../images/buttons/close.png" alt="close button" class="close-btn">
+                            </label>
+                            
+                            <h1>- Contact -</h1>
+                            
+                            <div class="contact-content">
+                                <a class="phone" href="tel:+380685981358">
+                                    <img src="../images/contact/phone.png" alt="phone">
+                                    <p>0685981358</p>
+                                </a>
+            
+                                <a class="email" href="mailto:tutovmaksum01@gmail.com">
+                                    <img src="../images/contact/email.png" alt="email">
+                                    <p>tutovmaksum01@gmail.com</p>
+                                </a>
+            
+                                <a class="telegram" href="https://t.me/TitovMaxim" target="_blank">
+                                    <img src="../images/contact/telegram.png" alt="telegram">
+                                    <p>@TitovMaxim</p>
+                                </a>
+            
+                                <a class="github" href="https://github.com/Maxim-Titov" target="_blank">
+                                    <img src="../images/contact/github.png" alt="github">
+                                    <p>Maxim-Titov</p>
+                                </a>
+                            </div>
+                        </section>
+
+                        <div class="back-black"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-wrapper">
+            <main>
+                <div class="back-btn">
+                    <form action="../index.php">
+                        <button>
+                            <img src="../images/buttons/back.png" alt="back button">
+                        </button>
+                    </form>
+                </div>
+
+                <section id="add-testimonial">
+                    <div class="container">
+                        <form>
+                            <textarea name="text" id="text" placeholder="Content"></textarea>
+
+                            <input type="text" name="name" id="name" placeholder="Your name">
+
+                            <button>Add</button>
+                        </form>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2025 Maxim Titov</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

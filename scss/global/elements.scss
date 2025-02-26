@@ -2,6 +2,7 @@
 @import 'mixins';
 
 html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -11,8 +12,17 @@ html {
     scroll-padding-top: 88px;
 }
 
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-wrapper {
+    flex: 1 1 auto;
+}
+
 body {
-    // background-color: $theme-dark;
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../images/elements/background.png);
     background-attachment: fixed;
     background-size: cover;
@@ -36,6 +46,10 @@ form {
         @include button-style($black, $white, 1px solid $white, rgba($gray-dark, 0.2));
 
         border-radius: 5px;
+
+        img {
+            width: 30px;
+        }
     }
 }
 
